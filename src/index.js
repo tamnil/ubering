@@ -2,18 +2,21 @@ const axios = require("axios");
 const postData = require("./uberPostData");
 const config = require("./config");
 
-let con = axios(
-    {
-        method: "post",
-        url: postData.url,
-        data: postData.data,
-        headers: config.headers
-    },
-    postData.data
-).then(res => res);
-//     .catch(ev => {
-//         console.log(ev);
-//         console.log("error!!!!!");
-//     });
+// console.log(postData())
+//
 
-module.exports = con;
+const exportedModules = {
+    getFareEstimates: (origin, dest) => {
+        const prepare = postData(origin, dest);
+        return axios(
+            {
+                method: "post",
+                url: prepare.url,
+                data: prepare.data,
+                headers: config.headers
+            },
+            prepare
+        ).then(res => res);
+    }
+};
+module.exports = exportedModules;

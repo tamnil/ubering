@@ -6,13 +6,15 @@ const env = process.env,
 
 var cookie = `sid=${sid};csid=${csid}`;
 
+const uberUrl = "https://m.uber.com";
+
 const toExport = {
     sid,
     csid,
-
+    uberUrl,
     headers: {
         authority: "m.uber.com",
-        origin: "https://m.uber.com",
+        origin: uberUrl,
 
         "user-agent":
       "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36",
