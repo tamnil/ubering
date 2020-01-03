@@ -1,0 +1,26 @@
+{
+  "name": "uber-trends",
+  "version": "0.0.0",
+  "description": "Uber Trends Hack",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "uber",
+    "trends",
+    "hack"
+  ],
+  "author": "Tamnil Saito Junior",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0"
+  }
+}
