@@ -4,14 +4,14 @@
 //
 //
 //
-const config = require('./config')
+const config = require('./config/config')
 
 const postData = {
     url: "https://m.uber.com/api/getFareEstimates",
 
     cookies: {
-        sid: env.NODE_UBER_COOKIE_SID,
-        csid: env.NODE_UBER_COOKIE_CSID
+        sid: config.sid,
+        csid: config.csid
     },
     data: {
         locale: "en-US",
