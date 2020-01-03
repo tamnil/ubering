@@ -4,7 +4,7 @@
 //
 //
 //
-const config = require('./config/config')
+const config = require('./config')
 
 const postData = {
     url: "https://m.uber.com/api/getFareEstimates",
