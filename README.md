@@ -1,6 +1,11 @@
 # Uber Hack to monitor prices
 Tamnil Saito Junior <tamnil@gmail.com>
 
+### WARNING:
+
+This is a hack and it's not based on oficial api!!!  can be deprecated or blocked without advice
+
+
 ## Description
 based on browser behavior to get better prices
 
@@ -12,14 +17,14 @@ based on browser behavior to get better prices
 -
 
 
-### WARNING:
-
-This is a hack and it's not based on oficial api!!!  can be deprecated or blocked without advice
 
 
 session cookies
 
 sid, csid
+
+ get the above data from a browser
+
 
 endpoint:
 
