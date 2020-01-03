@@ -4,9 +4,7 @@
 //
 //
 //
-require("dotenv").config();
-
-const env = process.env;
+const config = require('./config')
 
 const postData = {
     url: "https://m.uber.com/api/getFareEstimates",
