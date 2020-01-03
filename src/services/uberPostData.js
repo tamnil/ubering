@@ -4,7 +4,7 @@
 //
 
 
-const config = require('./config'),
+const config = require('../config'),
 fareEndpoint = '/api/getFareEstimates'
 
 const postData = (origin,dest) => ({

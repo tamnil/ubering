@@ -1,22 +1,6 @@
-const axios = require("axios");
-const postData = require("./uberPostData");
-const config = require("./config");
+const uber = require("./services/uberService");
 
-// console.log(postData())
-//
+const origin = [-22.8745132, -47.0494196],
+    dest = [-22.9088671, -47.0553481];
 
-const exportedModules = {
-    getFareEstimates: (origin, dest) => {
-        const prepare = postData(origin, dest);
-        return axios(
-            {
-                method: "post",
-                url: prepare.url,
-                data: prepare.data,
-                headers: config.headers
-            },
-            prepare
-        ).then(res => res);
-    }
-};
-module.exports = exportedModules;
+uber.getFareEstimates(origin,dest).then((res)=>console.log(res.data));
