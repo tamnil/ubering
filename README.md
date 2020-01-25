@@ -4,18 +4,27 @@ Tamnil Saito Junior <tamnil@gmail.com>
 
 ### WARNING:
 
-This is a hack and it's not based on oficial api!!!  can be deprecated or blocked without advice
+This is a reverse engineered endpoint's hack and it's not based on oficial api!!!
+Can be deprecated or blocked by UBER without advice
 
 
 ## Description
-based on browser behavior to get better prices
+based on browser's API endpoint behavior to get info about uber locations and taxes.
 
+## Install
 
-## Todo:
-- verify the session behavior
-- verigy update behavior
-- map if routes from drivers converge or diverges
--
+- copy .env.sample to .env
+- set environment variables in .env:
+
+   ```
+    NODE_UBER_COOKIE_SID=
+    NODE_UBER_COOKIE_CSID=
+
+    ```
+
+###    How to get these values:
+    log into uber and open devTools
+    you can get the sid and csid in application->cookie tab  or typing "document.cookie" in console tab
 
 
 
