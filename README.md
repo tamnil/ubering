@@ -10,8 +10,17 @@ This is a reverse engineered endpoint's hack and it's not based on oficial api!!
 Can be deprecated or blocked by UBER without advice
 
 
+
 ## Description
 based on browser's API endpoint behavior to get info about uber locations and taxes.
+
+
+### Available Functions:
+
+- getFareEstimates(origin, destination)
+- locationAutocomplete(location)
+- getLocationDetails(location)
+
 
 ## Install
 
@@ -29,6 +38,8 @@ based on browser's API endpoint behavior to get info about uber locations and ta
 ###    How to get these values:
     log into uber and open devTools
     you can get the sid and csid in application->cookie tab  or typing "document.cookie" in console tab
+
+
 
 
 ### Tests
