@@ -1,6 +1,7 @@
 const app = require("../uberService");
 
 const timeout = 3e4;
+jest.setTimeout(timeout)
 
 describe("test getFareEstimates", () => {
     const origin = [-22.8745132, -47.0494196],
@@ -11,7 +12,7 @@ describe("test getFareEstimates", () => {
         let a = await app.getFareEstimates(origin, dest);
         expect(a.data.status).toBe("success");
     });
-},timeout);
+});
 
 describe("test locationAutocomplete", () => {
     let myOrigin, locationsResponse, firstLocationElement;
@@ -27,7 +28,7 @@ describe("test locationAutocomplete", () => {
         expect(firstLocationElement.addressLine1).toBe("Campinas");
         expect(firstLocationElement.id).toBe("ChIJJWNL5x3GyJQRKsJ4IWo65Rc");
     });
-},timeout);
+});
 
 describe("test getLocationDetails", () => {
     const locationId = "ChIJJWNL5x3GyJQRKsJ4IWo65Rc";
@@ -42,6 +43,6 @@ console.log(myLocationDetails.data)
     // expect(firstLocationElement.addressLine1).toBe("Campinas");
     // expect(firstLocationElement.id).toBe("ChIJJWNL5x3GyJQRKsJ4IWo65Rc");
     });
-},timeout);
+});
 
 // describe("")
