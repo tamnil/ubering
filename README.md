@@ -15,6 +15,8 @@ based on browser's API endpoint behavior to get info about uber locations and ta
 
 ## Install
 
+- clone from https://github.com/tamnil/uber-trend-hack
+- run "npm install"
 - copy .env.sample to .env
 - set environment variables in .env:
 
@@ -29,17 +31,19 @@ based on browser's API endpoint behavior to get info about uber locations and ta
     you can get the sid and csid in application->cookie tab  or typing "document.cookie" in console tab
 
 
+### Tests
+
+- intall and set up "sid" and "csid" enviroment variables
+- run "jest" or "npm test"
 
 
-session cookies
-
-sid, csid
-
- get the above data from a browser
 
 
-## endpoint:
 
+## Notes:
+
+
+### some sketeches for dev propouses
 https://m.uber.com/api/getFareEstimates'
 
 https://m.uber.com/api/locationAutocomplete
