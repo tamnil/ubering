@@ -1,4 +1,4 @@
-# Uber Hack to monitor prices
+# Uber Hack -- bowser and mobile api
 
 Uber's browser API endpoints HACK - reverse engineered Uber API endpoints and userful commands
 
