@@ -1,4 +1,6 @@
-# Uber Hack to monitor prices ( in Dev )
+# Uber Hack to monitor prices
+
+Uber's browser API endpoints HACK - reverse engineered Uber API endpoints and userful commands
 
 Tamnil Saito Junior <tamnil@gmail.com>
 
