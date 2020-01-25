@@ -6,6 +6,8 @@ Tamnil Saito Junior <tamnil@gmail.com>
 
 ### WARNING!!!: Misuse can leak you personal data and some bad behaviors in UBER's app
 
+#### Novices keep out!!!
+
 This is a reverse engineered endpoint's hack and it's not based on oficial api!!!
 Can be deprecated or blocked by UBER without advice
 
