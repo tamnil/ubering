@@ -2,6 +2,17 @@ const axios = require("axios");
 const postData = require("./uberPostData");
 const config = require("../config");
 
+const prepareAxiosRequest = prepare =>
+    axios(
+        {
+            method: "post",
+            url: prepare.url,
+            data: prepare.data,
+            headers: config.headers
+        },
+        prepare
+    ).then(res => res);
+
 /**
  * getFareEstimates
  *
@@ -13,45 +24,14 @@ const config = require("../config");
  * @param [lat,lon] dest
  */
 
-const getFareEstimates = (origin, dest) => {
-    const prepare = postData.getFareEstimates(origin, dest);
-    return axios(
-        {
-            method: "post",
-            url: prepare.url,
-            data: prepare.data,
-            headers: config.headers
-        },
-        prepare
-    ).then(res => res);
-};
+const getFareEstimates = (origin, dest) =>
+    prepareAxiosRequest(postData.getFareEstimates(origin, dest));
 
-const locationAutocomplete = location => {
-    const prepare = postData.locationAutocomplete(location);
-    // console.log(prepare, 'here')
-    return axios(
-        {
-            method: "post",
-            url: prepare.url,
-            data: prepare.data,
-            headers: config.headers
-        },
-        prepare
-    ).then(res => res);
-};
-const getLocationDetails = location => {
-    const prepare = postData.getLocationDetails(location);
-    // console.log(prepare, 'here')
-    return axios(
-        {
-            method: "post",
-            url: prepare.url,
-            data: prepare.data,
-            headers: config.headers
-        },
-        prepare
-    ).then(res => res);
-};
+const locationAutocomplete = location =>
+    prepareAxiosRequest(postData.locationAutocomplete(location));
+
+const getLocationDetails = location =>
+    prepareAxiosRequest(postData.getLocationDetails(location));
 
 const getStatus = () => {};
 
