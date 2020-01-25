@@ -27,8 +27,22 @@ sid, csid
  get the above data from a browser
 
 
-endpoint:
+## endpoint:
 
 https://m.uber.com/api/getFareEstimates'
+
+https://m.uber.com/api/locationAutocomplete
+
+query: "campinas"
+locale: "en-US"
+
+https://m.uber.com/api/getStatus
+
+uuid: "111d1111-1df1-11f1-b111-b111b111aeeb"
+latitude: 0
+longitude: 0
+
+
+
 
 
