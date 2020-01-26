@@ -21,7 +21,16 @@ based on browser's API endpoint behavior to get info about uber locations and ta
 
 - getFareEstimates(origin, destination)
 - locationAutocomplete(location)
-- getLocationDetails(location)
+- getLocationDetails(locationId,provider="google_maps")
+- getStatus( , [uuid,latitude=0,longitude=0])
+- getAppData()
+- getNavigation(pickupLocation,destination)
+
+
+#### secondary functions
+
+- getUUID()
+
 
 
 ## Install
@@ -46,7 +55,7 @@ based on browser's API endpoint behavior to get info about uber locations and ta
 
 ### Tests
 
-- intall and set up "sid" and "csid" enviroment variables
+- install and set up "sid" and "csid" enviroment variables
 - run "jest" or "npm test"
 
 
