@@ -5,6 +5,7 @@
 #!! ERROR: babel is undefined. Use list command to see defined gitignore types !!#
 
 #!! ERROR: jest is undefined. Use list command to see defined gitignore types !!#
+tags
 
 ### Node ###
 # Logs
