@@ -6,7 +6,7 @@ Uber's browser API endpoints HACK - reverse engineered Uber API endpoints and us
 
 Tamnil Saito Junior <tamnil@gmail.com>
 
-### WARNING!!!: Misuse can leak you personal data and some bad behaviors in UBER's app
+### WARNING!!!: Misuse can leak your personal data and some bad behaviors in UBER's app
 
 #### Novices please keep out!!!
 
@@ -56,7 +56,7 @@ windows : https://superuser.com/questions/949560/how-do-i-set-system-environment
 
 
 ###    How to get these values ( CSID, SID ):
-    log into uber and open devTools
+    log into uber (https://www.uber.com/) and open devTools
     you can get the sid and csid in application->cookie tab  or typing "document.cookie" in console tab
 
 
@@ -73,38 +73,7 @@ You may have some CORS issues.
 
 ### some sketeches for dev propouses
 
-#### https://m.uber.com/api/getFareEstimates'
-get estimates and other data
 
-#### https://m.uber.com/api/locationAutocomplete
-
-query: "campinas"
-locale: "en-US"
-
-#### https://m.uber.com/api/getStatus
-
-uuid: "111d1111-1df1-11f1-b111-b111b111aeeb"
-latitude: 0
-longitude: 0
-
-
-#### https://m.uber.com/api/getAppData
-
-
-
-#### https://m.uber.com/api/getAccelerators
-
-returns saved places and personal history
-
-id
-addressLine1:
-addressLine2:
-provider:
-locale:
-
-#### https://m.uber.com/api/getNavigation
-
-get maps details
 
 ## Copyright
 
