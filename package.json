@@ -6,6 +6,9 @@
     "type": "git",
     "url": "git+https://github.com/tamnil/ubering.git"
   },
+  "bugs": {
+    "url": "https://github.com/tamnil/ubering/issues"
+   },
   "main": "src/index.js",
   "scripts": {
     "test": "jest"
