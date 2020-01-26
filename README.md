@@ -2,6 +2,8 @@
 
 Uber's browser API endpoints HACK - reverse engineered Uber API endpoints and usefull commands
 
+- Uses browser credentials (No needs to register in the uber's developer portal!!!)
+
 Tamnil Saito Junior <tamnil@gmail.com>
 
 ### WARNING!!!: Misuse can leak you personal data and some bad behaviors in UBER's app
@@ -39,9 +41,14 @@ based on browser's API endpoint behavior to get info about uber locations and ta
   ```
   .env file:
 
-
     UBER_COOKIE_SID=
     UBER_COOKIE_CSID=
+
+  *nix enviroment vars:
+
+    export UBER_COOKIE_SID=
+    export UBER_COOKIE_CSID=
+
 
     ```
 
