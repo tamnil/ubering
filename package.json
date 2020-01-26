@@ -1,6 +1,6 @@
 {
   "name": "ubering",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Uber browser api reverse engineered ",
   "main": "src/index.js",
   "scripts": {
