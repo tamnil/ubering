@@ -17,4 +17,3 @@ let questionDestination = rl.question('Destination:', (answer) => {
   rl.close();
 });
 
-// uber.getUuid().then(res => console.log(res))
