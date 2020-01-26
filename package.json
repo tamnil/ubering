@@ -1,15 +1,16 @@
 {
-  "name": "uber-trends-hack",
+  "name": "uber-hack",
   "version": "0.0.1",
-  "description": "Uber Trends Hack",
+  "description": "Uber Hack",
   "main": "src/index.js",
   "scripts": {
     "test": "jest"
   },
   "keywords": [
     "uber",
-    "trends",
-    "hack"
+    "browser",
+    "hack",
+    "api"
   ],
   "author": "Tamnil Saito Junior",
   "license": "MIT",
