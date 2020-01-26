@@ -52,6 +52,9 @@ based on browser's API endpoint behavior to get info about uber locations and ta
 
     ```
 
+windows : https://superuser.com/questions/949560/how-do-i-set-system-environment-variables-in-windows-10
+
+
 ###    How to get these values ( CSID, SID ):
     log into uber and open devTools
     you can get the sid and csid in application->cookie tab  or typing "document.cookie" in console tab
