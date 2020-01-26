@@ -1,8 +1,18 @@
 require("dotenv").config();
 
 const env = process.env,
-    sid = env.NODE_UBER_COOKIE_SID,
-    csid = env.NODE_UBER_COOKIE_CSID;
+    sid = env.UBER_COOKIE_SID,
+    csid = env.UBER_COOKIE_CSID;
+/*
+ * test if csid and csid are defined
+ */
+
+if (sid === undefined || csid === undefined) {
+    console.log(
+        "ERROR: UBERING",
+        "csid or sid in note defined in enviroment variables or .env file"
+    );
+}
 
 const cookie = `sid=${sid};csid=${csid}`,
     uberUrl = "https://m.uber.com",
