@@ -7,7 +7,10 @@ const config = require("../config"),
     url = {
         getFareEstimates: "/api/getFareEstimates",
         locationAutocomplete: "/api/locationAutocomplete",
-        getLocationDetails: "/api/getLocationDetails"
+        getLocationDetails: "/api/getLocationDetails",
+        getStatus: "/api/getStatus",
+        getAppData: "/api/getAppData",
+        getNavigation: "/api/getNavigation"
     },
     locale = "en-us",
     defaultData = {
@@ -35,7 +38,7 @@ const getFareEstimates = (origin, dest) => ({
 });
 
 const locationAutocomplete = location => ({
-    defaultData,
+    // defaultData,
     url: `${config.uberUrl}${url.locationAutocomplete}`,
     data: {
         locale,
@@ -43,19 +46,44 @@ const locationAutocomplete = location => ({
     }
 });
 
-const getLocationDetails = (id,provider="google_places") => ({
-    defaultData,
+const getLocationDetails = (id, provider = "google_places") => ({
+    // defaultData,
     url: `${config.uberUrl}${url.getLocationDetails}`,
     data: {
         locale,
-id,
-provider
-
+        id,
+        provider
     }
 });
 
+const getStatus = (uuid="", latitude = 0, longitude = 0) => ({
+    defaultData,
+    url: `${config.uberUrl}${url.getStatus}`,
+    data: {
+        uuid,
+        latitude,
+        longitude
+    }
+});
+const getAppData = () => ({
+    defaultData,
+    url: `${config.uberUrl}${url.getAppData}`,
+    data: {}
+});
+
+const getNavigation = (pickupLocation, destination) => ({
+    defaultData,
+    url: `${config.uberUrl}${url.getNavigation}`,
+    data: {
+        pickupLocation,
+        destination
+    }
+});
 module.exports = {
     getFareEstimates,
     locationAutocomplete,
-    getLocationDetails
+    getLocationDetails,
+    getStatus,
+    getAppData,
+    getNavigation
 };

@@ -11,7 +11,7 @@ const prepareAxiosRequest = prepare =>
             headers: config.headers
         },
         prepare
-    ).then(res => res);
+    ).then(res => res.data);
 
 /**
  * getFareEstimates
@@ -33,13 +33,47 @@ const locationAutocomplete = location =>
 const getLocationDetails = location =>
     prepareAxiosRequest(postData.getLocationDetails(location));
 
-const getStatus = () => {};
+const getAppData = () => prepareAxiosRequest(postData.getAppData());
+
+const getStatus = () => prepareAxiosRequest(postData.getStatus());
+
+// pickuplocation, destination = {latitude,longitude}
+const getNavigation = (pickupLocation, destination) =>
+    prepareAxiosRequest(postData.getNavigation(pickupLocation, destination));
+
+/*
+ * secondary functions
+ *
+ */
+
+const getUuid = async () => {
+    const appData = await getAppData();
+    return appData.data.appData.client.uuid;
+};
+
+const getLocations = async location =>
+    await locationAutocomplete(location).then(res => res.data.locations);
+const getFirstLocation = getLocations[0];
+// const getFirstLocationId = getLocations[0];
+
+
+// const getPriceByNames =() => {
+// const origin =
+// const fareEstimates = await getFareEstimates(origin,dest)
+// }
 
 const exportedModules = {
     getFareEstimates,
     getStatus,
     locationAutocomplete,
-    getLocationDetails
+    getLocationDetails,
+    getAppData,
+    getNavigation,
+    //secondary functions
+    getUuid,
+    getLocations,
+getFirstLocation,
+    // getFirstLocationId
 };
 
 /*
